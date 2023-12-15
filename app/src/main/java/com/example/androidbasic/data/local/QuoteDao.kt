@@ -21,5 +21,5 @@ interface QuoteDao {
 /*
 This all IO function has to be run on background thread for that we make insertQuote suspended function.
 And getQuotes will automatically run on background thread cuz it return LiveData.
-All Query that returns LiveData will be executed on background thread.*/
+We normally execute LiveData on main thread*/
 
